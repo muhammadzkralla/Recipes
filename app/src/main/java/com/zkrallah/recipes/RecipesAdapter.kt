@@ -10,7 +10,7 @@ import com.zkrallah.domain.model.Category
 import com.zkrallah.recipes.databinding.CategoryItemBinding
 
 
-class RecipesAdapter() : ListAdapter<Category, RecipesAdapter.ViewHolder>(CategoryDiffCallback()) {
+class RecipesAdapter : ListAdapter<Category, RecipesAdapter.ViewHolder>(CategoryDiffCallback()) {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
         val itemBinding = CategoryItemBinding.inflate(LayoutInflater.from(parent.context), parent, false)
